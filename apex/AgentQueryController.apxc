@@ -1,0 +1,30 @@
+public with sharing class AgentQueryController {
+
+    public class AgentResponse {
+        @AuraEnabled public String output;
+    }
+
+    @AuraEnabled(cacheable=false)
+    public static AgentResponse runAgentQuery(String queryText) {
+
+        HttpRequest req = new HttpRequest();
+        req.setEndpoint('callout:KG_Gateway/webhook-test/sfinterface'); 
+        req.setMethod('POST');
+        req.setHeader('Content-Type', 'application/json');
+        req.setTimeout(120000);
+        req.setBody(JSON.serialize(new Map<String, Object>{
+            'question' => queryText
+        }));
+
+        Http http = new Http();
+        HttpResponse res = http.send(req);
+
+        // Parse whatever JSON your endpoint returns
+        Map<String, Object> body = 
+            (Map<String, Object>) JSON.deserializeUntyped(res.getBody());
+
+        AgentResponse response = new AgentResponse();
+        response.output = (String) body.get('output');  // dynamic, not hardcoded
+        return response;
+    }
+}

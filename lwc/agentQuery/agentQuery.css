@@ -1,0 +1,14 @@
+.output-container {
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    background: #f7f9fc;
+    padding: 1rem;
+}
+
+.formatted-output {
+    white-space: pre-wrap;   /* 100% required to preserve newlines */
+    word-wrap: break-word;   /* avoid long-line overflow */
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.35rem;
+}
