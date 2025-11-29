@@ -61,11 +61,8 @@ The data to load is in  directory step1. Set the environment file. Then run the 
 | ![AI-Agent config  ](n8nsetup/aiagentconfig.jpeg)      | ![Aura-Agent config  ](n8nsetup/auraagentconfig.jpeg)  |
 | Aura-Agent credential | Model for agent |
 | ![AI-Agent credential  ](n8nsetup/auraagentcredential.jpeg) | ![Model for Agent  ](n8nsetup/modelforagent.jpeg) |
-
 | Embedding form mongo query  | Mongo query |
-
 | ![Embedding for mongo query  ](n8nsetup/embeddingformongoquery.jpeg) | ![Mongo query  ](n8nsetup/mongoquery.jpeg) |
-
 | Respond to webhook  | webhook for salesforce query |
 | ![ Respondtowebhook  ](n8nsetup/respondtowebhook.jpeg) | ![webhookforsalesforcequery ](n8nsetup/webhookforsalesforcequery.jpeg) |
 
