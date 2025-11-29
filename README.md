@@ -27,10 +27,12 @@ The data to load is in  directory step1. Set the environment file. Then run the 
 
 ## Images for Aura configuration 
 
-![Aura config  ](aurasetup/auraagent1.jpeg)
-![Aura config  ](aurasetup/auraagent2.jpeg)
-![Aura config  ](aurasetup/auraagent3.jpeg)
-![Aura config  ](aurasetup/auraagent4.jpeg)
+| Auraagent-Prompt | Auraagent-External |
+|-----------|-------|
+| ![Aura config  ](aurasetup/auraagent1.jpeg)      | ![Aura config  ](aurasetup/auraagent2.jpeg) |
+| Auraagent-Tool | Auraagent-Access link |
+| ![Aura config  ](aurasetup/auraagent3.jpeg)      | ![Aura config  ](aurasetup/auraagent4.jpeg) |
+
 
 
 ## Images for Mongo configuration 
@@ -41,9 +43,25 @@ The data to load is in  directory step1. Set the environment file. Then run the 
 2. Configure n8n flows (nodes) and sanity test them
 
 ![Alt text](image-url)
-## Architechure of workflow in n8n
+## Architecture of workflow in n8n
 
-![Architechure of n8n  ](n8nsetup/n8narchitechure.jpeg)
+![Architecture of n8n  ](n8nsetup/n8narchitechure.jpeg)
+
+## Flow configuration at n8n
+
+| AI-Agent config | Aura-Agent config |
+|-----------|-------|
+| ![AI-Agent config  ](n8nsetup/aiagentconfig.jpeg)      | ![Aura-Agent config  ](n8nsetup/auraagentconfig.jpeg)  |
+| Aura-Agent credential | Model for agent |
+| ![AI-Agent credential  ](n8nsetup/auraagentcredential.jpeg) | ![Model for Agent  ](n8nsetup/modelforagent.jpeg) |
+
+| Embedding form mongo query  | Mongo query |
+
+| ![Embedding form mongo query  ](n8nsetup/embeddingformmongoquery.jpeg) | ![Mongo query  ](n8nsetup/mongoquery.jpeg) |
+
+| Respond to webhook  | webhook for salesforce query |
+| ![ Respondtowebhook  ](n8nsetup/respondtowebhook.jpeg) | ![webhookforsalesforcequery ](n8nsetup/webhookforsalesforcequery.jpeg) |
+
 
 ### Testing command
 
