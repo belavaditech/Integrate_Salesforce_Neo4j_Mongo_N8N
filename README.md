@@ -25,6 +25,16 @@ Overview of steps
 
 The data to load is in  directory step1. Set the environment file. Then run the script
 
+## Architecture of workflow in n8n
+
+![Architecture of n8n  ](n8nsetup/n8narchitechure.jpeg)
+
+## The salesforce demo 
+
+![Demo working on salesforce ](salesforcesetup/salesforceworking.jpeg)
+
+
+
 ## Images for Aura configuration 
 
 | Auraagent-Prompt | Auraagent-External |
@@ -43,9 +53,6 @@ The data to load is in  directory step1. Set the environment file. Then run the 
 2. Configure n8n flows (nodes) and sanity test them
 
 ![Alt text](image-url)
-## Architecture of workflow in n8n
-
-![Architecture of n8n  ](n8nsetup/n8narchitechure.jpeg)
 
 ## Flow configuration at n8n
 
@@ -57,7 +64,7 @@ The data to load is in  directory step1. Set the environment file. Then run the 
 
 | Embedding form mongo query  | Mongo query |
 
-| ![Embedding form mongo query  ](n8nsetup/embeddingformmongoquery.jpeg) | ![Mongo query  ](n8nsetup/mongoquery.jpeg) |
+| ![Embedding for mongo query  ](n8nsetup/embeddingformongoquery.jpeg) | ![Mongo query  ](n8nsetup/mongoquery.jpeg) |
 
 | Respond to webhook  | webhook for salesforce query |
 | ![ Respondtowebhook  ](n8nsetup/respondtowebhook.jpeg) | ![webhookforsalesforcequery ](n8nsetup/webhookforsalesforcequery.jpeg) |
@@ -98,14 +105,5 @@ curl -s -X POST https://raga2560.app.n8n.cloud/webhook-test/sfinterface  -H "Con
      - n8n workflows processing and persisting data to MongoDB.
      - Knowledge graph lookups in Neo4j and returned responses in Salesforce.
 
-## Image of demo working on salesforce
-
-![Demo working on salesforce ](salesforcesetup/salesforceworking.jpeg)
 
 
-How to run local checks and tests
-- Lint JS files:
-```bash
-// filepath: run-lint.sh
-# Run from repo root
-npm run lint
