@@ -102,22 +102,43 @@ Then run the script `interactive_pdf_to_neo4j_mongo.py` after setting proper pyt
    
 
 
-## 8.0 Connect Aura-agent, MongoDB, and Salesforce through n8n and do sanity test end-to-end
+## 8.0 Wiring up
 
-   - Wire up n8n workflows to orchestrate the full path:
+   - Connect Aura-agent, Mongo-agent, AI-Agent and Salesforce through n8n 
+
+   - Make necessary configurations for the nodes
+   
+   - Orchestrate the full path, do sanity testing
 
    ![Architecture of n8n  ](n8nsetup/n8narchitechure.jpeg)
 
+Testing command
+
+<pre>
+
+curl -s -X POST https://raga2560.app.n8n.cloud/webhook-test/sfinterface  -H "Content-Type: application/json" -H "Accept: application/json,text/event-stream" -d @question.json
+
+</pre>
+
+
+Contents of question.json
+
+<pre>
+
+{    "question": "find the relationship for Systemic Lupus Erythematosus and skin lesions" }
+
+</pre>
 
 ## 9.0 Demonstration
 
    - Record or demo the complete integration showing:
      - LWC UI in Salesforce invoking the n8n workflow through Salesforce Apex.
-     - n8n workflows processing the request.
-     - Mongodb query processing 
-     - Knowledge graph lookup in Neo4j via Aura-agent 
-     - The reply from Mongodb and Aura-agent summarised by AI-agent 
-     - Then the response returned to Salesforce.
+     - n8n workflows receives the request through webhook.
+     - n8n node AI-Agent connects the two tools Mongo-Agent and Aura-agent
+     - Mongo-agent doing Mongodb query processing 
+     - Aura-agent doing Knowledge graph processing
+     - The reply from Mongo-agent and Aura-agent summarised by AI-agent 
+     - Then the response returned to Salesforce via Respond to webhook node of n8n.
 
 
 ### Demo of working n8n integration
