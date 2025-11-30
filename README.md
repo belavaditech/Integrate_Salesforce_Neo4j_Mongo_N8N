@@ -7,20 +7,20 @@ This repository demonstrates an end-to-end integration connecting a Neo4j knowle
 - `lwc/` — Salesforce LWC component
 - `apex/` — Salesforce Apex component
 - `n8nworkflow/` — n8n workflow to import
-- `n8nsetup/`, `mongosetup/`, `aurasetup/`, `salesforcesetup/ ` — screenshots and configuration images
+- `images/` — screenshots and configuration images
 - `step1/` — data-load scripts and environment templates
 
 
 
 ## 1.0 Architecture of workflow in n8n
 
-![Architecture of n8n  ](n8nsetup/n8narchitechure.jpeg)
+![Architecture of n8n  ](images/n8nsetup/n8narchitechure.jpeg)
 
 ## 2.0 The Salesforce demo 
 
 ### Salesforce image
 
-![Demo working on salesforce ](salesforcesetup/salesforceworking.jpeg)
+![Demo working on salesforce ](images/salesforcesetup/salesforceworking.jpeg)
 
 ### Video of demo working 
 [![Demo of working n8n integration ](https://img.youtube.com/vi/wOy2NtS1X6w/0.jpg)](https://www.youtube.com/watch?v=wOy2NtS1X6w)
@@ -32,9 +32,9 @@ This repository demonstrates an end-to-end integration connecting a Neo4j knowle
 
 | A) Auraagent-Prompt | B) Auraagent-External |
 |-----------|-------|
-| ![Aura config  ](aurasetup/auraagent1.jpeg)      | ![Aura config  ](aurasetup/auraagent2.jpeg) |
+| ![Aura config  ](images/aurasetup/auraagent1.jpeg)      | ![Aura config  ](images/aurasetup/auraagent2.jpeg) |
 | C) Auraagent-Tool | D) Auraagent-Access link |
-| ![Aura config  ](aurasetup/auraagent3.jpeg)      | ![Aura config  ](aurasetup/auraagent4.jpeg) |
+| ![Aura config  ](images/aurasetup/auraagent3.jpeg)      | ![Aura config  ](images/aurasetup/auraagent4.jpeg) |
 
 
 
@@ -42,7 +42,7 @@ This repository demonstrates an end-to-end integration connecting a Neo4j knowle
 
 | A) Mongo chunk contents | B) Mongo vector search |
 |-----------|-------|
-|![Mongo chunk contents  ](mongosetup/mongochunkrecord.jpeg)|![Mongo vector search  ](mongosetup/mongovectorsearchindex.jpeg)
+|![Mongo chunk contents  ](images/mongosetup/mongochunkrecord.jpeg)|![Mongo vector search  ](images/mongosetup/mongovectorsearchindex.jpeg)
 |
 
 
@@ -54,13 +54,13 @@ This repository demonstrates an end-to-end integration connecting a Neo4j knowle
 
 | A) AI-Agent config | B) Tool-Aura-Agent  |
 |-----------|-------|
-| ![AI-Agent config  ](n8nsetup/aiagentconfig.jpeg)      | ![Aura-Agent config  ](n8nsetup/auraagentconfig.jpeg)  |
+| ![AI-Agent config  ](images/n8nsetup/aiagentconfig.jpeg)      | ![Aura-Agent config  ](images/n8nsetup/auraagentconfig.jpeg)  |
 | C) Aura-Agent credential | D) Model for AI-Agent |
-| ![AI-Agent credential  ](n8nsetup/auraagentcredential.jpeg) | ![Model for Agent  ](n8nsetup/modelforagent.jpeg) |
+| ![AI-Agent credential  ](images/n8nsetup/auraagentcredential.jpeg) | ![Model for Agent  ](images/n8nsetup/modelforagent.jpeg) |
 | E) Embedding for mongo query  | F) Tool-Mongo query |
-| ![Embedding for mongo query  ](n8nsetup/embeddingformongoquery.jpeg) | ![Mongo query  ](n8nsetup/mongoquery.jpeg) |
+| ![Embedding for mongo query  ](images/n8nsetup/embeddingformongoquery.jpeg) | ![Mongo query  ](images/n8nsetup/mongoquery.jpeg) |
 | G) Webhook for Salesforce query   |H) Respond to webhook |
-| ![webhookforsalesforcequery ](n8nsetup/webhookforsalesforcequery.jpeg) | ![ Respondtowebhook  ](n8nsetup/respondtowebhook.jpeg) |
+| ![webhookforsalesforcequery ](images/n8nsetup/webhookforsalesforcequery.jpeg) | ![ Respondtowebhook  ](images/n8nsetup/respondtowebhook.jpeg) |
 
 
 ## 6.0 Manual Testing 
@@ -110,7 +110,7 @@ Then run the script `interactive_pdf_to_neo4j_mongo.py` after setting proper pyt
    
    - Orchestrate the full path, do sanity testing
 
-   ![Architecture of n8n  ](n8nsetup/n8narchitechure.jpeg)
+   ![Architecture of n8n  ](images/n8nsetup/n8narchitechure.jpeg)
 
 Testing command
 
