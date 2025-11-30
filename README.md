@@ -18,8 +18,11 @@ This repository demonstrates an end-to-end integration connecting a Neo4j knowle
 
 ## 2.0 The Salesforce demo 
 
+### Salesforce image
+
 ![Demo working on salesforce ](salesforcesetup/salesforceworking.jpeg)
 
+### Video of demo working 
 [![Demo of working n8n integration ](https://img.youtube.com/vi/wOy2NtS1X6w/0.jpg)](https://www.youtube.com/watch?v=wOy2NtS1X6w)
 
 
@@ -27,10 +30,10 @@ This repository demonstrates an end-to-end integration connecting a Neo4j knowle
 
 ## 3.0 Images for Aura configuration 
 
-| Auraagent-Prompt | Auraagent-External |
+| A) Auraagent-Prompt | B) Auraagent-External |
 |-----------|-------|
 | ![Aura config  ](aurasetup/auraagent1.jpeg)      | ![Aura config  ](aurasetup/auraagent2.jpeg) |
-| Auraagent-Tool | Auraagent-Access link |
+| C) Auraagent-Tool | D) Auraagent-Access link |
 | ![Aura config  ](aurasetup/auraagent3.jpeg)      | ![Aura config  ](aurasetup/auraagent4.jpeg) |
 
 
@@ -49,15 +52,15 @@ This repository demonstrates an end-to-end integration connecting a Neo4j knowle
 
 ## 5.0 Flow configuration at n8n
 
-| AI-Agent config | Aura-Agent config |
+| A) AI-Agent config | B) Tool-Aura-Agent  |
 |-----------|-------|
 | ![AI-Agent config  ](n8nsetup/aiagentconfig.jpeg)      | ![Aura-Agent config  ](n8nsetup/auraagentconfig.jpeg)  |
-| Aura-Agent credential | Model for agent |
+| C) Aura-Agent credential | D) Model for AI-Agent |
 | ![AI-Agent credential  ](n8nsetup/auraagentcredential.jpeg) | ![Model for Agent  ](n8nsetup/modelforagent.jpeg) |
-| Embedding form mongo query  | Mongo query |
+| E) Embedding for mongo query  | F) Tool-Mongo query |
 | ![Embedding for mongo query  ](n8nsetup/embeddingformongoquery.jpeg) | ![Mongo query  ](n8nsetup/mongoquery.jpeg) |
-| Respond to webhook  | webhook for salesforce query |
-| ![ Respondtowebhook  ](n8nsetup/respondtowebhook.jpeg) | ![webhookforsalesforcequery ](n8nsetup/webhookforsalesforcequery.jpeg) |
+| G) Webhook for Salesforce query   |H) Respond to webhook |
+| ![webhookforsalesforcequery ](n8nsetup/webhookforsalesforcequery.jpeg) | ![ Respondtowebhook  ](n8nsetup/respondtowebhook.jpeg) |
 
 
 ## 6.0 Manual Testing 
@@ -81,15 +84,20 @@ curl -s -X POST https://raga2560.app.n8n.cloud/webhook-test/sfinterface  -H "Con
 
 
 
-## 7.0 Overview of step-1
-1. Preparing Aura-agent, MongoDB Atlas, data load scripts and sanity testing
+## 7.0 Overview 
+
+Preparing Aura-agent, MongoDB Atlas, data load scripts and sanity testing
    - Prepare the Aura/agent service (the "Aura-agent") that will interact with the knowledge graph.
    - Provision MongoDB Atlas and create the necessary databases/collections.
    - Create vector index in Atlas manually (Automatic does not work in free version) 
    - Load sample data using provided scripts provided for Mongo and Neo4j (customize per environment).
    - Run sanity queries from MongoDB and Neo4j to verify data integrity.
 
-The data to load is in  directory step1. Set the environment file. Then run the script
+The data to load is in  directory `step1/`. The file `biomolecules-11-00928-v2-trunc.pdf` will be chunked and loaded by the script.
+
+Set the environment as in file `env.txt`. 
+
+Then run the script `interactive_pdf_to_neo4j_mongo.py` after setting proper python environment
 
    
 
@@ -112,6 +120,7 @@ The data to load is in  directory step1. Set the environment file. Then run the 
      - Then the response returned to Salesforce.
 
 
+### Demo of working n8n integration
 
 [![Demo of working n8n integration ](https://img.youtube.com/vi/wOy2NtS1X6w/0.jpg)](https://www.youtube.com/watch?v=wOy2NtS1X6w)
 
