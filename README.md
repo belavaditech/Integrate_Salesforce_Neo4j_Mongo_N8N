@@ -25,17 +25,17 @@ Overview of steps
 
 The data to load is in  directory step1. Set the environment file. Then run the script
 
-## Architecture of workflow in n8n
+## 1.0 Architecture of workflow in n8n
 
 ![Architecture of n8n  ](n8nsetup/n8narchitechure.jpeg)
 
-## The salesforce demo 
+## 2.0 The Salesforce demo 
 
 ![Demo working on salesforce ](salesforcesetup/salesforceworking.jpeg)
 
 
 
-## Images for Aura configuration 
+## 3.0 Images for Aura configuration 
 
 | Auraagent-Prompt | Auraagent-External |
 |-----------|-------|
@@ -45,16 +45,16 @@ The data to load is in  directory step1. Set the environment file. Then run the 
 
 
 
-## Images for Mongo configuration 
+## 4.0 Images for Mongo configuration 
 
 ![Mongo config  ](mongosetup/mongochunkrecord.jpeg)
 ![Mongo config  ](mongosetup/mongovectorsearchindex.jpeg)
 
 2. Configure n8n flows (nodes) and sanity test them
 
-![Alt text](image-url)
 
-## Flow configuration at n8n
+
+## 5.0 Flow configuration at n8n
 
 | AI-Agent config | Aura-Agent config |
 |-----------|-------|
@@ -66,6 +66,8 @@ The data to load is in  directory step1. Set the environment file. Then run the 
 | Respond to webhook  | webhook for salesforce query |
 | ![ Respondtowebhook  ](n8nsetup/respondtowebhook.jpeg) | ![webhookforsalesforcequery ](n8nsetup/webhookforsalesforcequery.jpeg) |
 
+
+## 6.0 Manual Testing 
 
 ### Testing command
 
