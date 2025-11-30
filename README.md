@@ -131,7 +131,7 @@ Contents of question.json
 
 ## 9.0 Demonstration
 
-   - Record or demo the complete integration showing:
+   - The complete integration showing:
      - LWC UI in Salesforce invoking the n8n workflow through Salesforce Apex.
      - n8n workflows receives the request through webhook.
      - n8n node AI-Agent connects the two tools Mongo-Agent and Aura-agent
